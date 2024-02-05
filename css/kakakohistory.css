@@ -1,0 +1,277 @@
+.sub_main{
+    position: relative;
+    width:68%;
+    margin: auto;
+}
+
+.kakao_history_title{
+    margin-top:90px;
+}
+
+.kakao_history_title span:first-child{
+    display:flex;
+    align-items: center;
+    margin-bottom:22px;
+}
+
+.kakao_history_title span:first-child img{
+    width: 75px;
+    height: 75px;
+}
+
+.kakao_history_title span:first-child h3{
+    font-size:44px;
+    font-weight: bold;
+    padding-left:10px;
+}
+
+.kakao_history_title span:last-child{
+    font-size:36px;
+}
+
+/*histroy container*/
+
+.kakao_history_container{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.kakao_history_content{
+    width:31.5%;
+    border-radius: 20px;
+    box-shadow: 2px 5px 40px 0 rgba(0,0,0,.09);
+    cursor: pointer;
+}
+
+.kakao_history_content_title_container{
+    display: flex;
+    flex-direction: column;
+    padding:25px 25px 0px 25px;
+}
+
+.kakao_history_content_title{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    display:flex;
+    align-items: center;
+}
+
+.title img{
+    width: 36px;
+    height: 36px;
+}
+
+.title .part{
+    font-size:14px;
+    margin: 0px 10px;
+    padding:10px;
+    border-radius: 30px;
+    background-color: #eee;
+}
+
+.title .day{
+    font-size:14px;
+    color:#666666;
+}
+
+.kakao_history_content_title .icon i{
+    font-size:20px;
+}
+
+.kakao_history_content_title_container strong{
+    margin-top:13px;
+    font-size:30px;
+    font-weight: bold;
+    white-space : nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.company{
+    margin-top:13px;
+    font-size: 19px;
+    font-weight: bold;
+    color:#333;
+}
+
+.hashtag{
+    margin-top:24px;
+    font-size:14px;
+    color:#666;
+}
+
+.hashtag span{
+    margin-left:2px;
+}
+
+.kakao_history_img_container{
+    margin-top: 24px;
+    height: 229px;
+}
+
+.kakao_history_img_container img{
+    width:100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/*kakao_history_container_btn*/
+.kakao_history_container_btn{
+    margin-top:40px;
+}
+
+.kakao_history_container_btn button{
+    width:41px;
+    height: 41px;
+    margin-right:10px;
+    border: none;
+    border-radius: 100%;
+    color:#888;
+}
+
+/*kakao_history_years*/
+.kakao_history_years{
+    margin-top:180px;
+}
+
+.title{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.title strong{
+    font-size:30px;
+    font-weight: bold;
+}
+
+.title button{
+    display:flex;
+    justify-content: space-between;
+    width:157px;
+    padding:12px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.kakao_history_years_container{
+    position: relative;
+    display:flex;
+    padding:0px 0px 72px 62px;
+}
+
+.kakao_history_years_container ::after{
+    position: absolute;
+    top:8px;
+    left:0px;
+    width:12px;
+    height:12px;
+    border-radius: 100%;
+    background-color:black;
+    content: "";
+}
+
+.kakao_history_years_container::before{
+    position: absolute;
+    top:23px;
+    left:4.2px;
+    width:3px;
+    height:255px;
+    background-color:#eeeeee;
+    content: "";
+}
+
+.kakao_history_years_container_last{
+    position: relative;
+    display:flex;
+    padding:0px 0px 72px 62px;
+}
+
+.kakao_history_years_container_last ::after{
+    position: absolute;
+    top:10px;
+    left:0px;
+    width:12px;
+    height:12px;
+    border-radius: 100%;
+    background-color:black;
+    content: "";
+}
+
+
+.kakao_history_years_img_container img{
+    width:240px;
+    height:180px;
+    border-radius: 10px;
+}
+
+.kakao_history_years_title_container{
+    display:flex;
+    flex-direction: column;
+    padding-left:62px;
+}
+
+.kakao_history_years_title_container strong{
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.day{
+    font-size:22px;
+    font-weight: bold;
+    color:#333333;
+}
+
+.year_hashtag{
+    margin-top: 24px;
+    color:#888888;
+}
+
+.year_hashtag span{
+    font-size:18px;
+    font-weight: bold;
+    padding-right:5px;
+}
+
+/*kakao_history_years_more_btn*/
+.kakao_history_years_more_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kakao_history_years_more_btn button{
+    padding: 15px 60px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+}
+
+.culture_top{
+    position: absolute;
+    bottom:-150px;
+    right:0px;
+    width:50px;
+    height:50px;
+    font-size:20px;
+    text-align: center;
+    border: none;
+    border-radius: 100%;
+    color:#fff;
+    background-color: black;
+    cursor: pointer;
+}
+
+.culture_top i{
+    padding-left:2px;
+}

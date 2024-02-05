@@ -1,0 +1,1472 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Nanum Gothic', sans-serif;
+    overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*index.css*/
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    margin: auto;
+    padding:35px 0px 35px 0px;
+}
+
+.logo{
+    width:75px;
+}
+
+.logo img{
+    width:100%;
+    cursor: pointer;
+}
+
+.menu_list{
+    display:flex;
+    position: relative;
+}
+
+.menu_list li{
+    font-size:17px;
+    font-weight: 600;
+    padding:0px 40px 0px 40px;
+    cursor: pointer;
+}
+
+.menu_list .focus{
+    color:rgb(0, 0, 0, .4);
+}
+
+.util_list button{
+    font-size:22px;
+    padding: 0px 0px 0px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*inner list*/
+
+
+
+.inner_list_one {
+    position: absolute;
+    bottom: -60px;
+    left:-80px;
+    z-index: 999;
+}
+
+.inner_list_container{
+    display:flex;
+    padding:15px 20px;
+    border-radius: 30px;
+    background-color: black;
+}
+
+.inner_list_container li{
+    padding: 0px;
+}
+
+.inner_list_container li a{
+    padding:0px 8px;
+    font-weight: lighter;
+    color:#fff;
+}
+
+.inner_list_container li a:hover{
+    font-weight: bold;
+}
+
+.inner_list_two{
+    position: absolute;
+    bottom: -60px;
+    left:-80px;
+    z-index: 999;
+}
+
+.inner_list_three{
+    position: absolute;
+    bottom: -60px;
+    left:260px;
+    z-index: 999;
+}
+
+.inner_list_four{
+    position: absolute;
+    bottom: -60px;
+    left:340px;
+    z-index: 999;
+}
+
+.inner_list_five{
+    position: absolute;
+    bottom: -60px;
+    right:-50px;
+    z-index: 999;
+}
+
+.inner_list_one_fadeout {
+    display:none;
+}
+.inner_list_two_fadeout{
+    display:none;
+}
+
+.inner_list_three_fadeout{
+    display:none;
+}
+
+.inner_list_four_fadeout{
+    display:none;
+}
+
+.inner_list_five_fadeout{
+    display:none;
+}
+
+
+/*main*/
+main{
+    width:90%;
+    margin: auto;
+}
+
+
+/*section video*/
+
+.video_side_banner{
+    display:flex;
+    justify-content: space-between;
+}
+
+.video_container{
+    position: relative;
+    width:83%;
+}
+
+.video_container video{
+    width:100%;
+    border-radius: 35px;
+}
+
+.video_banner_text{
+    position: absolute;
+    top:150px;
+    left:150px;
+    color:#fff;
+    font-size:52px;
+    line-height: 70px;
+}
+
+/*전구모양 이미지*/
+.img_text_fade_inout{
+    position: absolute;
+    top:0px;
+    right:0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding:0px 30px 10px 30px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.img_text_fade_inout img{
+    width:95px;
+}
+
+.img_text_fade_inout span{
+    display:none;
+    position: absolute;
+    top:-50px;
+    right:0px;
+    width:127px;
+    padding:18px 15px;
+    border-radius:10px;
+    font-size:14px;
+    color: #fff;
+    background-color: black;
+}
+
+/*radius*/
+.right_top_radius{
+    position: absolute;
+    top:-2px;
+    right:153px;
+    width:40px;
+    height:40px;
+}
+
+.right_bottom_radius{
+    position: absolute;
+    top:106px;
+    right:-2px;
+    width:40px;
+    height:40px;
+}
+
+.left_top_radius{
+    position: absolute;
+    bottom:83px;
+    left:-2px;
+    width:40px;
+    height:40px;
+    transform: rotate(180deg);
+}
+
+.left_bottom_radius{
+    position: absolute;
+    bottom:1px;
+    left:313px;
+    width:40px;
+    height:40px;
+    transform: rotate(180deg);
+}
+
+/*wrap text*/
+.wrap_text{
+    position: absolute;
+    bottom:0px;
+    padding:30px 55px;
+    background-color: #fff;
+    border-top-right-radius: 40px;
+}
+
+.wrap_text a{
+    font-size:25px;
+}
+
+.wrap_text a:last-child{
+    font-size:18px;
+    margin-left:15px;
+    padding:18px 20px;
+    border-radius: 100%;
+    background-color: black;
+    color:#fff;
+}
+
+/*side content*/
+
+.side_container{
+    width: 16%;
+}
+
+.side_content_one_layout{
+    position: relative;
+    width:270px;
+    height: 270px;
+    border-radius: 28px;
+    background-color: #fae100;
+    cursor: pointer;
+}
+
+.count_number{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.count_number span{
+    display:flex;
+    justify-content: center;
+}
+
+.count_up_container p {
+    font-size:30px;
+}
+
+.count_up_container p:last-child{
+    padding-left:5px;
+    font-size:16px;
+}
+
+.impact_img {
+    display: none;
+    width:100%;
+    z-index: -1;
+}
+
+.impact_img img{
+    width:100%;
+    border-radius: 28px;
+}
+
+/*indicator*/
+.indicator{
+    position: absolute;
+    bottom:30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicator button{
+    width:8px;
+    height:8px;
+    padding:0px;
+    margin:0px 8px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #e3e3e3;
+}
+
+.side_content_one_layout .indicator .focus{
+    background-color: #fff;
+}
+
+.side_content_two_layout .indicator button{
+    background-color: grey;
+}
+
+.side_content_two_layout .indicator .focus{
+    background-color: black;
+}
+
+/*side second container*/
+
+.side_content_two_layout{
+    position: relative;
+    width:232px;
+    height: 300px;
+    padding:20px;
+    margin: 20px 0px;
+    border-radius: 28px;
+    background-color: #f3f3f3;
+    cursor: pointer;
+
+}
+
+.kakao_diversity{
+    position: absolute;
+}
+
+.second_text_black{
+    width: 83px;
+    padding:10px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight:bold;
+    color:#fff;
+    background-color: black;
+}
+
+.main_text{
+    margin:0px 20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.hashtag_text{
+    display:flex;
+    font-size:16px;
+    color:#666;
+}
+
+.hashtag_text p {
+    margin-right:8px;
+}
+
+.kakao_financial_safety{
+    display:none;
+    z-index: -1;
+}
+
+.second_text_yellow{
+    width: 53px;
+    padding:10px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight:bold;
+    color:black;
+    background-color: #fae100;
+}
+
+/*side content three layout*/
+
+.side_content_three_layout{
+    position: relative;
+    width:272px;
+    height: 164px;
+    cursor: pointer;
+}
+
+.kakao_culture{
+    position: relative;
+    position: absolute;
+}
+
+.kakao_culture video{
+    width: 100%;
+    border-radius: 28px;
+}
+
+.kakao_culture p {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size:22px;
+    font-weight: bold;
+    color:#fff;
+}
+
+.kakao_community{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    background-color: #fae100;
+    display: none;
+}
+
+.kakao_community img{
+    position: absolute;
+    top:37%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.kakao_community p{
+    position: absolute;
+    bottom:20%;
+    left:50%;
+    transform: translateX(-50%);
+    font-size:21px;
+    font-weight: bold;
+}
+
+.kakao_history{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.kakao_history img{
+    width:100%;
+    height: 100%;
+}
+
+.inner_background{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    background-color: rgb(0, 0, 0, .2);
+}
+
+.kakao_history p {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size:22px;
+    font-weight: bold;
+    color:#fff;
+}
+
+.arrow_indicator{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    display:flex;
+    justify-content: space-between;
+}
+
+.arrow_indicator button{
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 100%;
+    font-size:15px;
+    cursor: pointer;
+}
+
+/*second section slide loop*/
+
+.slide_loop{
+    margin-top:200px;
+}
+
+.slide_layout{
+    display:flex;
+}
+
+.title_text{
+    display: flex;
+    align-items: center;
+}
+
+.title_text img{
+    width:78px;
+    margin-right:20px;
+}
+
+.title_text h3{
+    font-size:50px;
+    font-weight: bold;
+}
+
+/*slide one*/
+
+.slide_container{
+    display: flex;
+    margin-top:70px;
+}
+
+.slide_container_clone{
+    display:flex;
+    margin-top:70px;
+}
+
+.slide_container li {
+    padding:0px 8px;
+    cursor: pointer;
+}
+
+.slide_container_clone li{
+    padding:0px 8px;
+    cursor: pointer;
+}
+
+.slide_content_one{
+    display:flex;
+}
+
+.slide_item_one_one{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:336px;
+    height: 457px;
+    padding:40px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #f3f3f3;
+}
+
+.slide_text span{
+    display:flex;
+    align-items: center;
+}
+
+.slide_text span img{
+    width:33px;
+    margin-right:8px;
+}
+
+.slide_text span p{
+    font-size:14px;
+    padding:8px 12px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.slide_text h5{
+    margin:20px 0px;
+    font-size:24px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.slide_text p{
+    line-height: 25px;
+}
+
+.slide_hashtag span{
+    display:flex;
+}
+
+.slide_hashtag span p {
+    margin-right:8px;
+}
+
+.slide_item_one_two img{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/*slide two*/
+
+.slide_small_text_up{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:336px;
+    height: 233px;
+    padding:40px 40px 30px 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #f3f3f3;
+}
+
+.slide_small_img_down img{
+    width: 416px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/*slide three*/
+
+.slide_small_img_up{
+    height:233px;
+}
+.slide_small_img_up img{
+    width: 416px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.slide_small_text_down{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:336px;
+    height: 233px;
+    padding:30px 40px 40px 40px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #f3f3f3;
+}
+
+/*slide animation*/
+@keyframes slide_left{
+    0% { transform: translateX(0); }
+	50% { transform: translateX(-100%); }
+	50.01% { transform: translateX(100%); }
+	100% { transform: translateX(0); }
+}
+
+@keyframes slide_right {
+	0% { transition: translateX(0); }
+	100% { transform: translateX(-200%); }
+}
+
+.slide_container{
+    animation: slide_left 350s linear infinite;
+}
+
+.slide_container:hover{
+    animation-play-state: paused;
+}
+
+.slide_container_clone{
+    animation: slide_right 350s linear infinite;
+}
+
+.slide_container_clone:hover{
+    animation-play-state: paused;
+}
+
+/*kakao hometax*/
+.kakao_hometax{
+    margin-top:200px;
+}
+
+.kakao_hometax_container{
+    position: relative;
+    cursor: pointer;
+}
+
+.kakao_hometax_container img{
+    border-radius: 30px;
+}
+
+.kakao_hometax_container span{
+    position: absolute;
+    top:50%;
+    left:100px;
+    transform: translateY(-50%);
+}
+
+.kakao_hometax_container span h3{
+    font-size:50px;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.kakao_hometax_container span p {
+    padding-top:30px;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.kakao_hometax_btn{
+    position: absolute;
+    bottom:50px;
+    right:50px;
+    width:64px;
+    height:64px;
+    border: none;
+    border-radius: 100%;
+    font-size:21px;
+    color:#fff;
+    background-color: black;
+    cursor: pointer;
+}
+
+/*kakao service*/
+.kakao_service{
+    margin-top:200px;
+}
+
+.kakao_service_container{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 50px;;
+}
+
+.kakao_service_content{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 41.8%;
+    padding:62px;
+    margin:16px 0px 0px 16px;
+    border-radius: 30px;;
+    background-color: #f3f3f3;
+}
+
+.kakao_service_content strong{
+    font-size:30px;
+    font-weight: bold;
+}
+
+.kakao_service_img_container img{
+    width:56px;
+    padding:0px 4px;
+    cursor: pointer;
+}
+
+.kakao_service_btn{
+    margin-top:50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.kakao_service_btn span{
+    display: inline-flex;
+    align-items: center;
+    padding:25px 70px;
+    border-radius: 38px;
+    background-color: #f3f3f3;
+}
+
+.kakao_service_btn span strong{
+    font-size:20px;
+    font-weight: bold;
+}
+
+.kakao_service_btn span button{
+    width:23px;
+    height: 23px;
+    border: none;
+    border-radius: 100%;
+    margin-left:8px;
+    font-size:11px;
+    color:#fff;
+    background-color: black;
+}
+
+/*kakao_news*/
+.kakao_news{
+    margin-top:200px;
+}
+
+.kakao_news_layout{
+    display:flex;
+    justify-content: space-between;
+    margin-top:70px;
+}
+
+.kakao_container_one{
+    display: flex;
+    flex-direction: column;
+    width:32.7%;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+}
+
+.kakao_content_one_one{
+    display:flex;
+    flex-direction: column;
+    padding:40px 40px 0px 40px;
+}
+
+.kakao_news_img_container img{
+    width:100%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.kakao_news_title_text{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kakao_news_text_container{
+    display:flex;
+    align-items: center;
+}
+
+.kakao_news_text_container img{
+   width:46px;
+}
+
+.kakao_news_text_container .kakao_news_title {
+    font-size:14px;
+    padding:12px 16px;
+    margin:0px 15px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.kakao_news_text_container .kakao_day{
+    font-size:14px;
+}
+
+.kakao_news_title_text button{
+    font-size:23px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.kakao_news_main_text{
+    height:160px;
+    margin:30px 0px;
+    font-size:28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.kakao_news_hashtag{
+    display:flex;
+}
+
+.kakao_news_hashtag p {
+    font-size:16px;
+    font-weight: bold;
+    padding:0px 8px 40px 0px;
+    color:#666;
+    cursor: pointer;
+}
+
+.kakao_news_layout_two{
+    margin-top:70px;
+}
+
+.kakao_container_two{
+    display:flex;
+    justify-content: space-between;
+}
+
+.kakao_news_content_one{
+    width:44.8%;
+    height:126px;
+    padding:36px 40px;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+.kakao_news_main_text_second{
+    margin-top:20px;
+    font-size:26px;
+}
+
+.kakao_container_three{
+    display:flex;
+    justify-content: space-between;
+    margin-top:20px;
+}
+
+.kakao_small_news{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:28%;
+    padding:36px 40px;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+.kakao_small_news_title {
+    font-size:26px;
+
+}
+
+.kakao_small_button{
+    font-size:17px;
+    font-weight: bold;
+}
+
+.kakao_small_button button{
+    width:23px;
+    height: 23px;
+    border: none;
+    border-radius: 100%;
+    color: #fff;
+    background-color: black;
+}
+
+/*카카오 약속과 책임*/
+.kakao_promiss{
+    margin-top:200px;
+}
+
+.kakao_promiss_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.kakao_promiss_content{
+    position: relative;
+    width:32.5%;
+    height: 669px;
+    margin-top: 70px;
+}
+
+/*kakao_promiss_content:nth-child(1)*/
+
+.kakao_promiss_content:nth-child(1){
+    background-color: #89dcff;
+}
+
+
+/*kakao_promiss_content:nth-child(2)*/
+
+.kakao_promiss_content:nth-child(2){
+    background-color: #03502b;
+}
+.kakao_promiss_content:nth-child(2) .kakao_promiss_sub_title strong{
+    background-color: #1ed47e;
+}
+
+.kakao_promiss_content:nth-child(2) img{
+    width: 60%;
+}
+
+.kakao_promiss_content:nth-child(2) .kakao_promiss_title{
+    color:#fff;
+}
+
+
+
+/*kakao_promiss_content:nth-child(3)*/
+
+.kakao_promiss_content:nth-child(3){
+    background-color: #333333;
+}
+
+.kakao_promiss_content:nth-child(3) .kakao_promiss_sub_title strong{
+    background-color: #fae100;
+}
+
+.kakao_promiss_content:nth-child(3) img{
+    width: 60%;
+}
+
+.kakao_promiss_content:nth-child(3) .kakao_promiss_title{
+    color:#fff;
+}
+
+
+
+.kakao_promiss_content img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.kakao_promiss_sub_title strong{
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    right:0px;
+    width:272px;
+    height:58px;
+    border-radius: 30px;
+    font-size:17px;
+    background-color: #89dcff;
+}
+
+.kakao_promiss_sub_title_background{
+    position: absolute;
+    top: 0px;
+    right:0px;
+    width:272px;
+    height:58px;
+    padding:2px 2px 16px 16px;
+    border-bottom-left-radius: 30px;
+    background-color: #fff;
+}
+
+/*radius*/
+.promiss_top_left{
+    position: absolute;
+    width:26px;
+    top:-3px;
+    left:0px;
+    transform: rotate(270deg);
+}
+
+.promiss_top_middle{
+    position: absolute;
+    width:26px;
+    top:-1px;
+    left:242px;
+}
+
+.promiss_top_right{
+    position: absolute;
+    width:26px;
+    top:75px;
+    right:-1px;
+}
+
+.promiss_bottom_left{
+    position: absolute;
+    width:26px;
+    bottom:-1px;
+    left:-1px;
+    transform: rotate(180deg);
+}
+
+.promiss_bottom_middle{
+    position: absolute;
+    width:26px;
+    bottom:-3px;
+    right:80px;
+    transform: rotate(90deg);
+}
+
+.promiss_bottom_right{
+    position: absolute;
+    width:26px;
+    bottom:77px;
+    right:0px;
+    transform: rotate(90deg);
+}
+
+
+.kakao_promiss_title{
+    position: absolute;
+    bottom:40px;
+    left:40px;
+    font-size:26px;
+    line-height: 40px;
+}
+
+.kakao_promiss_btn i{
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    bottom:0px;
+    right:0px;
+    width:64px;
+    height:64px;
+    font-size:20px;
+    border: none;
+    border-radius: 100%;
+    color:#fff;
+    background-color: black;
+    cursor: pointer;
+}
+
+.kakao_promiss_btn_background{
+    position: absolute;
+    bottom:0px;
+    right:0px;
+    width:64px;
+    height:64px;
+    padding: 16px 0px 0px 16px;
+    border-top-left-radius: 30px;
+    background-color: #fff;
+}
+
+/*카카오 고객센터*/
+.kakao_customer_service{
+    margin-top:200px;
+}
+
+.kakao_customer_service_container_one{
+    display:flex;
+    justify-content: space-between;
+    margin-top:50px;
+}
+
+.kakao_customer_service_content_one_one{
+    display:flex;
+    justify-content: space-between;
+    width:480px;
+    height:90px;
+    padding:36px 40px;
+    margin-top:20px;
+    border-radius: 28px;
+    background-color: #f3f3f3;
+}
+
+.kakao_customer_service_title{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.kakao_customer_service_title strong{
+    font-size:26px;
+}
+
+.kakao_customer_service_title span{
+    display:flex;
+    align-items: center;
+}
+
+.kakao_customer_service_title span strong{
+    font-size:17px;
+    font-weight:bold;
+}
+
+.kakao_customer_service_title span button{
+    width:24px;
+    height: 24px;
+    margin-left:8px;
+    border:none;
+    border-radius: 100%;
+    color:#fff;
+    background-color: black;
+}
+.kakao_customer_service_img img{
+    width:100px;
+    height:100px;
+}
+
+.kakao_customer_service_content_two{
+    position: relative;
+    width:480px;
+    height: 445px;
+    margin-top:20px;
+    padding: 40px;
+    border-radius: 28px;
+    background-color: #fae100;
+}
+
+.kakao_customer_service_content_two strong{
+    font-size:26px;
+    font-weight: bold;
+}
+
+.kakao_customer_service_content_two p {
+    margin-top:24px;
+    font-size:17px;
+    font-weight: bold;
+}
+
+.kakao_customer_service_icon_container{
+    display:flex;
+    justify-content: space-between;
+    margin-top:40px;
+}
+
+.kakao_customer_service_icon_container img{
+    width:80px;
+}
+
+.kakao_customer_service_img_container{
+    position: absolute;
+    bottom:-2px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.kakao_customer_service_img_container img{
+    width:260px;
+}
+
+.kakao_customer_service_content_three{
+    position: relative;
+    width:480px;
+    height: 445px;
+    margin-top:20px;
+    padding: 40px;
+    border-radius: 28px;
+    background-color: #0073ff;
+
+}
+
+.kakao_customer_service_title_three{
+    display:flex;
+    flex-direction: column;
+}
+
+.kakao_customer_service_title_three strong{
+    font-size:26px;
+    font-weight: bold;
+    line-height: 40px;
+    color:#fff;
+}
+
+.kakao_customer_service_title_three span{
+    margin-top:20px;
+}
+
+.kakao_customer_service_title_three span strong{
+    font-size:17px;
+}
+
+.kakao_customer_service_title_three span button {
+    width:24px;
+    height:24px;
+    border: none;
+    border-radius: 100%;
+    margin-left:5px;
+}
+
+.kakao_customer_service_img_container_three{
+    position: absolute;
+    bottom:-3px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.kakao_customer_service_img_container_three img{
+    width:560px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
+
+.kakao_customer_service_container_two{
+    display:flex;
+    justify-content: space-between;
+    margin-top:20px;
+}
+
+.kakao_customer_service_content_four{
+    display:flex;
+    justify-content: space-between;
+    width:44.8%;
+    padding:36px 40px;
+    border-radius: 28px;
+    background-color: #f3f3f3;
+}
+
+.kakao_customer_service_title_four{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.kakao_customer_service_title_four strong{
+    font-size:26px;
+    font-weight: bold;
+}
+
+.kakao_customer_service_title_four span strong{
+    font-size:17px;
+}
+
+.kakao_customer_service_title_four span button{
+    width:24px;
+    height: 24px;
+    border: none;
+    border-radius: 100%;
+    margin-left:5px;
+    color:#fff;
+    background-color: black;
+}
+
+.kakao_customer_service_btn{
+    margin-top:50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.kakao_customer_service_btn_container{
+    display: inline-flex;
+    align-items: center;
+    padding:25px 70px;
+    border-radius: 38px;
+    background-color: #f3f3f3;
+}
+
+.kakao_customer_service_btn_container strong{
+    font-size:20px;
+    font-weight: bold;
+}
+
+.kakao_customer_service_btn_container button{
+    width:23px;
+    height: 23px;
+    border: none;
+    border-radius: 100%;
+    margin-left:8px;
+    font-size:11px;
+    color:#fff;
+    background-color: black;
+}
+
+.inner_footer{
+    margin:200px 0px 50px 0px;
+    border-top: 1px solid black;
+}
+
+.footer_service{
+    display:flex;
+    width:90%;
+    margin: auto;
+    margin-top:100px;
+}
+
+.footer_service div{
+    width:18%;
+}
+
+.footer_service h3{
+    font-size:26px;
+    font-weight: bold;
+    height: 0px;
+    margin-bottom:50px;
+}
+
+.footer_service div:first-child ul li{
+    padding-bottom:20px;
+    font-size:14px;
+    color:#333333;
+}
+
+.footer_service h4{
+    margin:50px 0px 30px 0px;
+    font-size:16px;
+    font-weight: bold;
+}
+
+.footer_service ul:nth-child(1){
+    margin-top: 90px;
+}
+
+.footer_service ul li{
+    padding-bottom:20px;
+    font-size:14px;
+    color:#888888;
+}
+
+.kakao_coperate{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    margin: auto;
+    margin-top:100px;
+}
+
+.kakao_coperate_list{
+    display:flex;
+    flex-direction: column;
+}
+
+.kakao_coperate_list ul{
+    display:flex;
+}
+
+.kakao_coperate_list li{
+    font-size:12px;
+    padding-right:24px;
+    color:#888888;
+}
+
+.kakao_coperate_list li:nth-child(2){
+    color:#333333;
+    font-weight: bold;
+}
+
+.kakao_coperate_list li:nth-child(3){
+    color:#333333;
+    font-weight: bold;
+}
+
+.kakao_coperate_list span{
+    margin-top:30px;
+    font-size:13px;
+    color: #888888;
+}
+
+.kakao_coperate_btn button{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    padding: 10px 20px 12px 20px;
+    border: none;
+    border-radius: 28px;
+}
+
+.kakao_coperate_btn strong{
+    font-size:12px;
+}
+
+.kakao_coperate_btn i{
+    font-size:17px;
+}

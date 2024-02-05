@@ -1,0 +1,303 @@
+.sub_main{
+    width:68%;
+    margin: auto;
+}
+
+.kakao_milestones_title{
+    margin-top:90px;
+}
+
+.kakao_milestones_title span:first-child{
+    display:flex;
+    align-items: center;
+    margin-bottom:22px;
+}
+
+.kakao_milestones_title span:first-child img{
+    width: 75px;
+    height: 75px;
+}
+
+.kakao_milestones_title span:first-child h3{
+    font-size:44px;
+    font-weight: bold;
+    padding-left:10px;
+}
+
+.kakao_milestones_title span:last-child{
+    font-size:36px;
+}
+
+/*kakao_years*/
+.kakao_years{
+    position: relative;
+    margin-top:95px;
+}
+
+.kakao_years_title{
+    display:flex;
+    justify-content: space-between;
+}
+
+.kakao_years_title strong{
+    font-size:30px;
+    font-weight: bold;
+}
+
+.kakao_years_title ul{
+    display:flex;
+}
+
+.kakao_years_title ul li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:36px;
+    height:36px;
+    border-radius: 100%;
+    margin-left: 10px;
+    color: #333;
+    background-color: #eee;
+}
+
+.kakao_years_title ul li i{
+    font-size: 18px;
+}
+
+.kakao_years_btn{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+    margin-top:50px;
+    padding:10px 24px 14px 24px;
+    border: none;
+    border-radius: 30px;
+}
+
+.kakao_years_btn span:first-child{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.kakao_years_btn span:last-child{
+    font-size:16px;
+    padding-bottom:3px;
+}
+
+/*kakao_years_list*/
+.kakao_years_list{
+    margin-top:50px;
+}
+
+.kakao_years_list_container{
+    position: relative;
+    padding:0px 0px 80px 50px;
+}
+
+.kakao_years_list_container::after{
+    position: absolute;
+    top:8px;
+    left:0px;
+    width:12px;
+    height:12px;
+    border-radius: 100%;
+    background-color:black;
+    content: "";
+}
+
+.kakao_years_list_container::before{
+    position: absolute;
+    top:20px;
+    left:4px;
+    width:3px;
+    height:350px;
+    background-color:#eeeeee;
+    content: "";
+}
+
+.kakao_years_list_container_last_yet_yet{
+    position: relative;
+    padding:0px 0px 80px 50px;
+}
+
+.kakao_years_list_container_last_yet_yet::after{
+    position: absolute;
+    top:8px;
+    left:0px;
+    width:12px;
+    height:12px;
+    border-radius: 100%;
+    background-color:black;
+    content: "";
+}
+
+.kakao_years_list_container_last_yet_yet::before{
+    position: absolute;
+    top:20px;
+    left:4px;
+    width:3px;
+    height:100px;
+    background-color:#eeeeee;
+    content: "";
+}
+.kakao_years_list_container_last{
+    position: relative;
+    padding:0px 0px 80px 50px;
+}
+.kakao_years_list_container_last_yet{
+    position: relative;
+    padding:0px 0px 80px 50px;
+}
+
+.kakao_years_list_container_last_yet::after{
+    position: absolute;
+    top:8px;
+    left:0px;
+    width:12px;
+    height:12px;
+    border-radius: 100%;
+    background-color:black;
+    content: "";
+}
+
+.kakao_years_list_container_last_yet::before{
+    position: absolute;
+    top:20px;
+    left:4px;
+    width:3px;
+    height:120px;
+    background-color:#eeeeee;
+    content: "";
+}
+.kakao_years_list_container_last{
+    position: relative;
+    padding:0px 0px 80px 50px;
+}
+
+.kakao_years_list_container_last::after{
+    position: absolute;
+    top:8px;
+    left:0px;
+    width:12px;
+    height:12px;
+    border-radius: 100%;
+    background-color:black;
+    content: "";
+}
+
+.kakao_years_list_container_last::before{
+    position: absolute;
+    top:20px;
+    left:4px;
+    width:3px;
+    height:0px;
+    background-color:#eeeeee;
+    content: "";
+}
+
+
+
+.kakao_years_list_title{
+    display:flex;
+}
+
+.kakao_years_list_title span{
+    display:flex;
+    margin-left:56px;
+}
+
+.kakao_years_list_title strong{
+    font-size:26px;
+    font-weight: bold;
+}
+
+.kakao_years_list_title span em{
+    font-size:18px;
+    font-weight: bold;
+}
+
+.kakao_years_list_title span ul{
+    margin-left:36px;
+}
+
+.kakao_years_list_title span ul li{
+    margin-bottom:30px;
+}
+
+.kakao_years_list_title span ul li a{
+    margin-top:4px;
+    font-size:17px;
+    color:#333333;
+}
+
+.kakao_years_list_title span ul li a:hover{
+    font-weight: bold;
+}
+
+.kakao_years_list_title span ul li i{
+    margin-left:8px;
+}
+
+.kakao_years_list_second_content{
+    margin-top:40px;
+}
+
+.kakao_years_list_btn{
+    display:flex;
+    align-items: center;
+    margin-top: 40px;
+    padding:12px 18px;
+    border: none;
+    border-radius: 30px;
+}
+
+.kakao_years_list_btn p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right:8px;
+}
+
+.kakao_years_list_btn i{
+    font-size:14px;
+}
+
+.kakao_years_sns{
+    display:flex;
+    justify-content: center;
+}
+
+.kakao_years_sns  li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:36px;
+    height:36px;
+    border-radius: 100%;
+    margin-left: 10px;
+    color: #333;
+    background-color: #eee;
+}
+
+.kakao_years_sns li i{
+    font-size: 18px;
+}
+
+.culture_top{
+    position: absolute;
+    bottom:-150px;
+    right:0px;
+    width:50px;
+    height:50px;
+    font-size:20px;
+    text-align: center;
+    border: none;
+    border-radius: 100%;
+    color:#fff;
+    background-color: black;
+    cursor: pointer;
+}
+
+.culture_top i{
+    padding-left:2px;
+}

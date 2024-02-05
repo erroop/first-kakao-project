@@ -1,0 +1,135 @@
+.sub_main{
+    position: relative;
+    width:68%;
+    margin: auto;
+}
+
+/*타이틀 텍스트*/
+.kakao_company_title{
+    margin-top:90px;
+}
+
+.kakao_company_title span:first-child{
+    display:flex;
+    align-items: center;
+    margin-bottom:22px;
+}
+
+.kakao_company_title span:first-child img{
+    width: 75px;
+    height: 75px;
+}
+
+.kakao_company_title span:first-child h3{
+    font-size:44px;
+    font-weight: bold;
+    padding-left:10px;
+}
+
+.kakao_company_title span:last-child{
+    font-size:36px;
+}
+
+/*카카오 디지털 앱*/
+.kakao_company{
+    margin-top: 120px;
+}
+
+.title h3{
+    font-size:42px;
+    font-weight: bold;
+}
+
+.title p{
+    margin-top:40px;
+    font-size:22px;
+    font-weight: bold;
+    line-height: 38px;
+    color:#666666;
+}
+
+/*컨텐츠*/
+
+.kakao_company_content_layout{
+    margin-top:55px;
+}
+
+.kakao_company_content_container{
+    display:flex;
+    justify-content: space-between;
+    padding-top:36px;
+}
+
+.kakao_company_content{
+    position: relative;
+    width:47%;
+    padding-bottom: 195px;
+    border-bottom: 1px solid #eee;
+}
+
+.kakao_company_content strong{
+    font-size:30px;
+    font-weight: bold;
+}
+
+.kakao_company_content h3{
+    margin-top:15px;
+    font-size:30px;
+    line-height: 40px;
+}
+
+.kakao_company_content p {
+    margin-top:25px;
+    font-size:15px;
+    color:#666666;
+    line-height: 27px;
+}
+
+.digital_img_container{
+    position: absolute;
+    bottom:80px;
+}
+
+.kakao_company_content img{
+    width:50%;
+}
+
+.digital_btn_container{
+    position: absolute;
+    bottom:80px;
+    right:0px;
+    width:44px;
+    height:44px;
+    border: none;
+    border-radius: 100%;
+    font-size:17px;
+}
+
+/*kakaocorp_p*/
+.kakaocorp_p{
+    margin-top: 70px;
+}
+
+.kakaocorp_p p{
+    font-size:18px;
+}
+
+.kakaocorp_p a{
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.culture_top{
+    position: absolute;
+    bottom:-170px;
+    right:0px;
+    width:50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    font-size:20px;
+    color: #fff;
+    background-color: black;
+    cursor: pointer;
+}
+
