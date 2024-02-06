@@ -1,0 +1,168 @@
+.sub_main{
+    width:68%;
+    margin: auto;
+}
+
+.kakao_numbers_title{
+    margin-top:90px;
+}
+
+.kakao_numbers_title span:first-child{
+    display:flex;
+    align-items: center;
+    margin-bottom:22px;
+}
+
+.kakao_numbers_title span:first-child img{
+    width: 75px;
+    height: 75px;
+}
+
+.kakao_numbers_title span:first-child h3{
+    font-size:44px;
+    font-weight: bold;
+    padding-left:10px;
+}
+
+.kakao_numbers_title span:last-child{
+    font-size:36px;
+}
+
+/*kakao_numbers_list*/
+.kakao_numbers_list{
+    position: relative;
+    margin-top:100px;
+}
+
+.kakao_numbers_list ul{
+    display:flex;
+}
+
+.kakao_numbers_list ul li{
+    margin-right:10px;
+    padding:13px 16px;
+    font-size:16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.on{
+    font-weight: bold;
+    color: #fff;
+    background-color: black;
+}
+
+.out{
+    color:#333;
+    background-color: #eee;
+}
+
+/*kakao_numbers_container*/
+.kakao_numbers_container{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.kakao_numbers_content{
+    width:31.5%;
+    border-radius: 20px;
+    box-shadow: 2px 5px 40px 0 rgba(0,0,0,.09);
+    cursor: pointer;
+}
+
+.kakao_numbers_content_title_container{
+    display: flex;
+    flex-direction: column;
+    padding:25px 25px 0px 25px;
+}
+
+.kakao_numbers_content_title{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    display:flex;
+    align-items: center;
+}
+
+.title img{
+    width: 36px;
+    height: 36px;
+}
+
+.title .part{
+    font-size:14px;
+    margin: 0px 10px;
+    padding:10px;
+    border-radius: 30px;
+    background-color: #eee;
+}
+
+.title .day{
+    font-size:14px;
+    color:#666666;
+}
+
+.kakao_numbers_content_title .icon i{
+    font-size:20px;
+}
+
+.kakao_numbers_content_title_container strong{
+    margin-top:13px;
+    font-size:30px;
+    font-weight: bold;
+    line-height: 42px;
+    white-space : nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.company{
+    margin-top:13px;
+    font-size: 19px;
+    font-weight: bold;
+    color:#333;
+}
+
+.hashtag{
+    margin-top:24px;
+    font-size:14px;
+    color:#666;
+}
+
+.hashtag span{
+    margin-left:2px;
+}
+
+.kakao_numbers_img_container{
+    margin-top: 24px;
+    height: 229px;
+}
+
+.kakao_numbers_img_container img{
+    width:100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.culture_top{
+    position: absolute;
+    bottom:-150px;
+    right:0px;
+    width:50px;
+    height:50px;
+    font-size:20px;
+    text-align: center;
+    border: none;
+    border-radius: 100%;
+    color:#fff;
+    background-color: black;
+    cursor: pointer;
+}
+
+.culture_top i{
+    padding-left:2px;
+}

@@ -87,6 +87,7 @@
     margin-top:13px;
     font-size:30px;
     font-weight: bold;
+    line-height: 42px;
     white-space : nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -142,7 +143,6 @@
 .title{
     display:flex;
     justify-content: space-between;
-    margin-bottom: 50px;
 }
 
 .title strong{
