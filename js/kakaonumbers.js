@@ -1,4 +1,11 @@
 $(function(){
+    const top_btn = $(".culture_top");
+    top_btn.click(function(){
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    })
     const list = $(".kakao_numbers_list ul li")
     const list_btn_color = (first, second, third) => {
         list.removeClass("on")
