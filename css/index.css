@@ -50,6 +50,10 @@ table {
 	border-spacing: 0;
 }
 
+button{
+    cursor: pointer;
+}
+
 
 
 /*index.css*/
