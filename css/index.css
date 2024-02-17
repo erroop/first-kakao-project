@@ -27,6 +27,7 @@ body {
 	line-height: 1;
     font-family: 'Nanum Gothic', sans-serif;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 ol, ul {
 	list-style: none;
@@ -591,6 +592,7 @@ main{
     margin-top:70px;
 }
 
+
 .slide_container li {
     padding:0px 8px;
     cursor: pointer;
@@ -786,7 +788,7 @@ main{
 .kakao_service_container{
     display:flex;
     flex-wrap: wrap;
-    margin-top: 50px;;
+    margin-top: 50px;
 }
 
 .kakao_service_content{
@@ -858,6 +860,10 @@ main{
     width:32.7%;
     background-color: #f3f3f3;
     border-radius: 30px;
+}
+
+.mobile_nesw_btn{
+    display: none;
 }
 
 .kakao_content_one_one{
@@ -1486,6 +1492,9 @@ main{
     font-size:17px;
 }
 @media screen and (max-width: 1024px){
+    br {
+        display:none;
+    }
     header{
         width:70%;
         margin: auto;
@@ -1673,10 +1682,11 @@ main{
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        margin-top:20px;
     }
 
     .side_content_one_layout{
-        width:225px;
+        width:32%;
         height: 225px;
         border-radius: 15px;
     }
@@ -1687,16 +1697,25 @@ main{
 
 
     .impact_img img{
-        width: 225px;
+        width: 100%;
         height: 225px;
         border-radius: 15px;
     }
 
     .side_content_two_layout{
-        width:185px;
-        height: 185px; 
-        padding:20px;
+        width:32%;
+        height: 225px;
+        margin: 0px;
+        padding: 0px;
         border-radius: 15px;
+    }
+
+    .kakao_diversity{
+        padding:20px;
+    }
+
+    .kakao_financial_safety{
+        padding: 20px;
     }
 
     .second_text_black{
@@ -1727,12 +1746,12 @@ main{
     }
 
     .side_content_three_layout{
-        width:225px;
+        width:32%;
         height: 225px;
     }
 
     .kakao_culture{
-        width: 225px;
+        width: 100%;
         height: 225px;
         border-radius: 15px;
         overflow: hidden;
@@ -1874,6 +1893,42 @@ main{
         border-top-right-radius: 0px;
     }
 
+    .slide_container_clone li:nth-child(1) .slide_item_one_two{
+        position: relative;
+        width:232px;
+        height: 130px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: #9ab9ec;
+    }
+
+    .slide_container_clone li:nth-child(1) .slide_item_one_two img{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 0px;
+    }
+
+    .slide_container_clone li:nth-child(6) .slide_item_one_two{
+        position: relative;
+        width:232px;
+        height: 130px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: #7982bc;
+    }
+
+    .slide_container_clone li:nth-child(6) .slide_item_one_two img{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 0px;
+    }
+
     .slide_small_text_up{
         width:192px;
         height: 180px;
@@ -1925,4 +1980,551 @@ main{
         animation-play-state: inherit;
     }
 
+    .kakao_hometax{
+        margin-top:80px;
+    }
+
+    .kakao_hometax_container{
+        position: relative;
+        width:100%;
+        height:300px;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #ffeb00;
+    }
+
+    .kakao_hometax_container img{
+        position: absolute;
+        top:50%;
+        right:-44px;
+        transform: translateY(-50%);
+        width:100%;
+    }
+
+    .kakao_hometax_container span{
+        left:50px;
+    }
+
+    .kakao_hometax_container span h3{
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .kakao_hometax_container span p{
+        padding-top:10px;
+        font-size: 14px;
+    }
+
+    .kakao_hometax_btn{
+        width:38px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .kakao_service{
+        margin-top:80px;
+    }
+
+    .kakao_service_container{
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .kakao_service_content{
+        margin-left:0px;
+        padding:32px 24px;
+        border-radius: 15px;
+    }
+
+    .kakao_service_content strong{
+        font-size: 18px;
+    }
+
+    .kakao_service_img_container{
+    }
+
+    .kakao_service_img_container img{
+        width:40px;
+    }
+
+    .kakao_service_content:nth-child(1) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+    .kakao_service_content:nth-child(2) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+    .kakao_service_content:nth-child(3) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+    .kakao_service_content:nth-child(4) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+    .kakao_service_content:nth-child(5) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+
+    .kakao_service_btn{
+        margin-top:30px;
+    }
+
+    .kakao_service_btn span{
+        padding: 15px 50px;
+    }
+
+    .kakao_service_btn span strong{
+        font-size: 14px;
+    }
+
+    .kakao_news{
+        margin-top:80px;
+    }
+
+    .kakao_news_wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-top:20px;
+    }
+
+    .kakao_news_layout{
+        position: relative;
+        display: block;
+        width:49.5%;
+        height: 400px;
+        margin: 0px;
+    }
+
+    .kakao_container_one{
+        position: absolute;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .kakao_content_one_one{
+        padding:20px 20px 0px 20px;
+    }
+
+    .kakao_news_text_container img{
+        width:24px;
+    }
+
+    .kakao_news_text_container .kakao_news_title{
+        font-size: 12px;
+        margin:0px 5px;
+        padding:8px 9px;
+    }
+
+    .kakao_news_text_container .kakao_day{
+        font-size: 12px;
+    }
+
+    .kakao_news_main_text{
+        height:90px;
+        margin:10px 0px;
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .kakao_news_hashtag p{
+        font-size: 12px;
+        margin-bottom:20px;
+        padding:0px;
+        padding-right:3px;
+    }
+
+    .kakao_news_img_container{
+        height: 210px;
+    }
+
+    .kakao_news_img_container img{
+        height: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .mobile_nesw_btn{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top:55%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        width:90%;
+        z-index: 999999;
+    }
+
+    .mobile_nesw_btn button{
+        width: 32px;
+        height: 32px;
+        border: none;
+        border-radius: 100%;
+        font-size: 14px;
+
+        color: #fff;
+        background-color: #000;
+    }
+
+
+    .kakao_news_layout_two{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0px;
+        width:49.5%;
+    }
+
+    .kakao_container_two{
+        position: relative;
+        width: 100%;
+        height: 180px;
+        border-radius: 15px;
+    }
+
+    .kakao_news_content_one{
+        position: absolute;
+        width:100%;
+        height:100%;
+        padding: 0px;
+        border-radius: 15px;
+    }
+
+    .kakao_container_two .kakao_news_content_one .kakao_news_title_text{
+        padding:20px 20px 0px 20px;
+    }
+
+    .kakao_news_main_text_second{
+        width:70%;
+        margin-top:10px;
+        padding:0px 20px;
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .kakao_container_three{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .kakao_small_news:nth-child(1){
+        width:36%;
+
+    }
+    .kakao_small_news:nth-child(2){
+        width:36%;
+    }
+    .kakao_small_news:nth-child(3){
+        width:100%;
+        margin-top:13px;
+    }
+
+    .kakao_small_news{
+        padding:20px;
+        border-radius: 15px;
+    }
+
+    .kakao_small_news_title{
+        font-size: 17px;
+    }
+
+    .kakao_small_button i{
+        font-size:11px;
+    }
+
+    .kakao_small_news .kakao_small_button strong{
+        display: none;
+    }
+
+    .kakao_promiss{
+        margin-top:80px;
+    }
+
+    .kakao_promiss_content{
+        height: 341px;
+    }
+
+    .kakao_promiss_sub_title strong{
+        width:125px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .kakao_promiss_sub_title_background{
+        width:125px;
+        height: 32px;
+        padding:2px 2px 10px 10px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .promiss_top_left{
+        width:18px;
+    }
+
+    .promiss_top_middle{
+        width:18px;
+        right:136px;
+        left:auto;
+    }
+
+    .promiss_top_right{
+        width:18px;
+        top:43px;
+    }
+
+    .promiss_bottom_left{
+        width:18px;
+    }
+
+    .promiss_bottom_middle{
+        width:18px;
+        right:57px;
+    }
+
+    .promiss_bottom_right{
+        width:18px;
+        bottom:55px;
+    }
+
+    .kakao_promiss_title{
+        bottom:7%;
+        left:10%;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .kakao_promiss_title{
+        width:140px;
+    }
+
+    .kakao_promiss_title strong{
+        width:140px;
+    }
+
+    .kakao_promiss_btn i{
+        width:48px;
+        height:48px;
+        font-size:14px;
+    }
+
+    .kakao_promiss_btn_background{
+        width:57px;
+        height:57px;
+        padding:0px;
+        border-top-left-radius: 15px;
+    }
+
+    .kakao_customer_service{
+        margin-top:80px;
+    }
+
+    .kakao_customer_service_content_one{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .kakao_customer_service_container_one{
+        flex-wrap: wrap;
+        margin-top:20px;
+    }
+
+    .kakao_customer_service_content_one_one{
+        width:25%;
+        height: 25px;
+        padding: 24px;
+        border-radius: 15px;
+    }
+
+    .kakao_customer_service_title{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .kakao_customer_service_title strong{
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .kakao_customer_service_title span strong{
+        display: none;
+    }
+
+    .kakao_customer_service_img{
+        display: none;
+    }
+
+    .kakao_customer_service_content_two{
+        margin-top:10px;
+        width:42%;
+        height: 136px;
+        padding: 24px;
+        border-radius: 15px;
+    }
+
+    .kakao_customer_service_content_two strong{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .kakao_customer_service_content_two p{
+        margin-top: 14px;
+        font-size: 14px;
+    }
+
+    .kakao_customer_service_icon_container{
+        margin-top: 35px;
+    }
+
+    .kakao_customer_service_icon_container img{
+        width:51px;
+    }
+
+    .kakao_customer_service_img_container{
+        display: none;
+    }
+
+    .kakao_customer_service_content_three{
+        margin-top:10px;
+        padding: 24px;
+        width:42%;
+        height: 136px;
+        border-radius: 15px;
+    }
+
+    .kakao_customer_service_title_three strong{
+        width:210px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .kakao_customer_service_title_three span{
+        margin-top:10px;
+    }
+
+    .kakao_customer_service_title_three span strong{
+        font-size: 14px;
+    }
+
+    .kakao_customer_service_img_container_three{
+        bottom:7%;
+        left:45%;
+        transform: none;
+    }
+
+    .kakao_customer_service_img_container_three img{
+        width:160px;
+        border-radius: 15px;
+    }
+
+    .kakao_customer_service_container_two{
+        margin-top:10px;
+    }
+
+    .kakao_customer_service_content_four{
+        width:42%;
+        height: 92px;
+        padding:24px;
+        border-radius: 15px;
+    }
+
+    .kakao_customer_service_title_four{
+        justify-content: space-between;
+    }
+
+    .kakao_customer_service_title_four strong{
+        font-size: 17px;
+    }
+
+    .kakao_customer_service_title_four span strong{
+        font-size: 14px;
+    }
+
+    .kakao_customer_service_title_four span button i{
+        font-size: 11px;
+    }
+
+    .kakao_customer_service_content_four img{
+        width: 62px;
+        padding-top:10px;
+    }
+
+    .kakao_customer_service_btn{
+        margin-top: 20px;
+    }
+
+    .kakao_customer_service_btn_container{
+        padding:20px 50px;
+    }
+
+    .kakao_customer_service_btn_container strong{
+        font-size: 15px;
+    }
+
+    .inner_footer{
+        margin-top:80px;
+    }
+    
+    .footer_service{
+        flex-direction: column;
+        width:70%;
+        margin: auto;
+        margin-top:40px;
+    }
+
+    .footer_service div{
+        width:100%;
+        padding:20px 0px;
+        border-bottom: 1px solid rgb(230, 230, 230);
+    }
+
+    .footer_service h3{
+        font-size: 15px;
+    }
+
+    .footer_service div:first-child ul li{
+        font-size: 12px;
+    }
+
+    .footer_service h4{
+        margin:20px 0px;
+    }
+
+    .footer_service div:nth-child(n+2) ul li{
+        display: none;
+    }
+
+    .footer_service div:nth-child(4){
+        display: none;
+    }
+    
+    .footer_service h4{
+        margin: 0px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .kakao_coperate{
+        position: relative;
+        display: block;
+        width:70%;
+        margin: auto;
+        margin-top:80px;
+    }
+
+    .kakao_coperate_list ul{
+        flex-wrap: wrap;
+    }
+
+    .kakao_coperate_list li{
+        width:50%;
+        padding:0px;
+        margin-bottom:20px;
+        cursor: pointer;
+    }
+    
+    .kakao_coperate_btn button{
+        position: absolute;
+        bottom:-10px;
+        right: 0px;
+    }
 }
