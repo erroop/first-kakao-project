@@ -26,7 +26,6 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     font-family: 'Nanum Gothic', sans-serif;
-    overflow-x: hidden;
     overflow-y: scroll;
 }
 ol, ul {
@@ -1491,7 +1490,9 @@ main{
 .kakao_coperate_btn i{
     font-size:17px;
 }
-@media screen and (max-width: 1024px){
+
+/*태블릿 디바이스*/
+@media screen and (min-width: 912px) and (max-width: 1024px){
     br {
         display:none;
     }
@@ -2039,10 +2040,6 @@ main{
     .kakao_service_content strong{
         font-size: 18px;
     }
-
-    .kakao_service_img_container{
-    }
-
     .kakao_service_img_container img{
         width:40px;
     }
@@ -2125,7 +2122,7 @@ main{
     }
 
     .kakao_news_hashtag p{
-        font-size: 12px;
+        font-size: 11px;
         margin-bottom:20px;
         padding:0px;
         padding-right:3px;
@@ -2136,7 +2133,7 @@ main{
     }
 
     .kakao_news_img_container img{
-        height: 100%;
+        height: 210px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
     }
@@ -2319,9 +2316,6 @@ main{
         display: flex;
         justify-content: space-between;
         width: 100%;
-    }
-
-    .kakao_customer_service_container_one{
         flex-wrap: wrap;
         margin-top:20px;
     }
@@ -2407,7 +2401,8 @@ main{
 
     .kakao_customer_service_img_container_three{
         bottom:7%;
-        left:45%;
+        left: auto;
+        right:7%;
         transform: none;
     }
 
@@ -2526,5 +2521,2075 @@ main{
         position: absolute;
         bottom:-10px;
         right: 0px;
+    }
+}
+
+/*태블릿 소형 디바이스*/
+@media screen and (min-width: 768px) and (max-width: 911px){
+    br {
+        display:none;
+    }
+    header{
+        width:70%;
+        margin: auto;
+    }
+    .menu_list li{
+        display:none;
+    }
+
+    .max_media_icon{
+        display:none;
+    }
+
+    .min_media_icon{
+        display:inline;
+    }
+
+    /*hide 메뉴 컨텐츠*/
+    .mobile_hide_content{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top:0px;
+        right: -1025px;
+        width: 100%;
+        height: 100vh;
+        padding:10px 0px;
+        z-index: 99999;
+        background-color: #fff;
+
+    }
+
+    .mobile_hide_content span{
+        display:flex;
+        justify-content: space-between;
+        width: 480px;
+        margin: auto;
+    }
+
+    .mobile_hide_content span img{
+        width: 84px;
+        height: 24px;
+    }
+
+    .mobile_hide_content span i{
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .hide_menu{
+        width: 480px;
+        height: 80%;
+        margin: auto;
+    }
+
+    .hide_menu ul li{
+        display:flex;
+        align-items: center;
+        padding: 20px 0px;
+        cursor: pointer;
+    }
+
+    .hide_menu ul li img{
+        width: 48px;
+        height: 48px;
+    }
+
+    .hide_menu ul li strong{
+        margin-left:20px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+    
+    .hide_more_menu{
+        display:flex;
+        justify-content: space-between;
+        width: 480px;
+        margin: auto;
+    }
+
+    .hide_more_menu ul{
+        display:flex;
+    }
+
+    .hide_more_menu ul li{
+        font-size: 14px;
+        font-weight: bold;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+
+    .hide_more_menu ul li i{
+        font-size: 22px;
+        padding-left:20px;
+        cursor: pointer;
+    }
+
+    main{
+        width:70%;
+        margin: auto;
+    }
+
+    .video_side_banner{
+        flex-direction: column;
+    }
+
+    .video_container{
+        width: 100%;
+    }
+
+    .video_container video{
+        border-radius: 15px;
+    }
+
+    .video_banner_text{
+        top:25px;
+        left: 35px;
+        font-size: 25px;
+        line-height: 42px;
+    }
+
+    .img_text_fade_inout{
+        display: flex;
+        align-items: center;
+        border-bottom-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding: 0px 0px 10px 15px;
+    }
+
+    .img_text_fade_inout img{
+        width:48px;
+        height: 48px;
+    }
+
+    .img_text_fade_inout span{
+        display: block;
+        position: static;
+        height: 28px;
+        padding:10px 15px 0px 15px;
+    }
+
+    .right_top_radius{
+        right:219px;
+        width:22px;
+        height:22px;
+    }
+    
+    .right_bottom_radius{
+        top:57px;
+        width:22px;
+        height:22px;
+    }
+    
+    .left_top_radius{
+        bottom:44px;
+        width:22px;
+        height:22px;
+    }
+    
+    .left_bottom_radius{
+        left:175px;
+        width:22px;
+        height:22px;
+    }
+
+    .wrap_text{
+        padding:15px 28px;
+        border-top-right-radius: 15px;
+    }
+
+    .wrap_text a{
+        font-size:15px;
+    }
+
+    .wrap_text a:last-child{
+        font-size:11px;
+        margin-left:15px;
+        padding:5px 7px;
+        border-radius: 100%;
+        background-color: black;
+        color:#fff;
+    }
+
+    .side_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top:20px;
+    }
+
+    .side_content_one_layout{
+        width:32%;
+        height: 180px;
+        border-radius: 15px;
+    }
+
+    .count_number{
+        font-size: 11px;
+    }
+
+    .count_number_text{
+        height: 20px;
+    }
+
+    .count_up_container p{
+        font-size: 18px;
+    }
+
+    .impact_img img{
+        width: 100%;
+        height: 180px;
+        border-radius: 15px;
+    }
+
+    .side_content_two_layout{
+        width:32%;
+        height: 180px;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 15px;
+    }
+
+    .kakao_diversity{
+        padding:20px;
+    }
+
+    .kakao_financial_safety{
+        padding: 20px;
+    }
+
+    .second_text_black{
+        width:60px;
+        margin-bottom: 5px;
+        padding:7px;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+
+    .second_text_yellow{
+        width:38px;
+        margin-bottom: 5px;
+        padding:7px;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+
+    .main_text{
+        margin: 0px;
+        font-size:12px;
+        line-height: 20px;
+    }
+
+    .hashtag_text{
+        margin-top: 10px;
+        font-size:11px;
+    }
+
+    .side_content_three_layout{
+        width:32%;
+        height: 180px;
+    }
+
+    .kakao_culture{
+        width: 100%;
+        height: 180px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .kakao_culture video{
+        width: auto;
+        height: 100%;
+        border-radius: 15px;
+    }
+    
+    .kakao_culture p{
+        font-size: 14px;
+    }
+
+    .kakao_community img{
+        top:40%;
+    }
+
+    .kakao_community{
+        border-radius: 15px;
+    }
+
+    .kakao_community p{
+        font-size: 14px;
+        bottom:25%;
+    }
+
+    .inner_background{
+        border-radius: 15px;
+    }
+
+    .kakao_history p{
+        font-size: 14px;
+    }
+
+    .arrow_indicator button{
+        width: 25px;
+        height: 25px;
+    }
+
+    .slide_loop{
+        margin-top:80px;
+    }
+
+    .title_text img{
+        width:48px;
+        margin-right:10px;
+    }
+    
+    .title_text h3{
+        font-size:28px;
+        font-weight: bold;
+    }
+
+    .slide_container{
+        margin-top:20px;
+    }
+
+    .slide_container_clone{
+        margin-top:20px;
+    }
+
+    .slide_content_one{
+        flex-direction: column;
+    }
+
+    .slide_item_one_one{
+        width:192px;
+        height: 180px;
+        padding:20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .slide_text span img{
+        width: 32px;
+    }
+
+    .slide_text span p{
+        padding:2px 12px;
+        font-size: 12px;
+    }
+
+    .slide_text h5{
+        margin:10px 0px 0px 0px;
+        height: 90px;
+        font-size: 18px;
+        line-height: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .sub_p{
+      display: none;
+    }
+
+    .slide_hashtag span p{
+        margin-right:2px;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .slide_container li:nth-child(1) .slide_item_one_two{
+        position: relative;
+        width:232px;
+        height: 130px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: #9ab9ec;
+    }
+
+    .slide_container li:nth-child(1) .slide_item_one_two img{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 0px;
+    }
+    .slide_container li:nth-child(6) .slide_item_one_two{
+        position: relative;
+        width:232px;
+        height: 130px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: #7982bc;
+    }
+
+    .slide_container li:nth-child(6) .slide_item_one_two img{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 0px;
+    }
+
+    .slide_container_clone li:nth-child(1) .slide_item_one_two{
+        position: relative;
+        width:232px;
+        height: 130px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: #9ab9ec;
+    }
+
+    .slide_container_clone li:nth-child(1) .slide_item_one_two img{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 0px;
+    }
+
+    .slide_container_clone li:nth-child(6) .slide_item_one_two{
+        position: relative;
+        width:232px;
+        height: 130px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: #7982bc;
+    }
+
+    .slide_container_clone li:nth-child(6) .slide_item_one_two img{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 0px;
+    }
+
+    .slide_small_text_up{
+        width:192px;
+        height: 180px;
+        padding:20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .slide_small_img_down img{
+        width:232px;
+        height: 130px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .slide_small_text_down{
+        width:192px;
+        height: 180px;
+        padding:20px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .slide_small_img_up{
+        height:130px;
+    }
+    .slide_small_img_up img{
+        width: 232px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .slide_container{
+        animation: slide_left 150s linear infinite;
+    }
+
+    .slide_container:hover{
+        animation-play-state: inherit;
+    }
+    
+    .slide_container_clone{
+        animation: slide_right 150s linear infinite;
+    }
+    
+    .slide_container_clone:hover{
+        animation-play-state: inherit;
+    }
+
+    .kakao_hometax{
+        margin-top:80px;
+    }
+
+    .kakao_hometax_container{
+        position: relative;
+        width:100%;
+        height:300px;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #ffeb00;
+    }
+
+    .kakao_hometax_container img{
+        position: absolute;
+        top:50%;
+        right:-44px;
+        transform: translateY(-50%);
+        width:100%;
+    }
+
+    .kakao_hometax_container span{
+        left:50px;
+    }
+
+    .kakao_hometax_container span h3{
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .kakao_hometax_container span p{
+        padding-top:10px;
+        font-size: 11px;
+    }
+
+    .kakao_hometax_btn{
+        width:38px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .kakao_service{
+        margin-top:80px;
+    }
+
+    .kakao_service_container{
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .kakao_service_content{
+        margin-left:0px;
+        padding:26px 20px;
+        border-radius: 15px;
+    }
+
+    .kakao_service_content strong{
+        font-size: 14px;
+    }
+
+
+    .kakao_service_img_container img{
+        width:28px;
+    }
+
+    .kakao_service_content:nth-child(1) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+    .kakao_service_content:nth-child(2) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+    .kakao_service_content:nth-child(3) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+    .kakao_service_content:nth-child(4) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+    .kakao_service_content:nth-child(5) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+
+    .kakao_service_btn{
+        margin-top:30px;
+    }
+
+    .kakao_service_btn span{
+        padding: 15px 50px;
+    }
+
+    .kakao_service_btn span strong{
+        font-size: 14px;
+    }
+
+    .kakao_news{
+        margin-top:80px;
+    }
+
+    .kakao_news_wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-top:20px;
+    }
+
+    .kakao_news_layout{
+        position: relative;
+        display: block;
+        width:49.5%;
+        height: 400px;
+        margin: 0px;
+    }
+
+    .kakao_container_one{
+        position: absolute;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .kakao_content_one_one{
+        padding:20px 20px 0px 20px;
+    }
+
+    .kakao_news_text_container img{
+        width:24px;
+    }
+
+    .kakao_news_text_container .kakao_news_title{
+        font-size: 12px;
+        margin:0px 5px;
+        padding:8px 9px;
+    }
+
+    .kakao_news_text_container .kakao_day{
+        font-size: 12px;
+    }
+
+    .kakao_news_main_text{
+        height:90px;
+        margin:10px 0px;
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .kakao_news_hashtag p{
+        font-size: 9px;
+        margin-bottom:20px;
+        padding:0px;
+        padding-right:3px;
+    }
+
+    .kakao_news_img_container{
+        height: 210px;
+    }
+
+    .kakao_news_img_container img{
+        height: 210px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .mobile_nesw_btn{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top:55%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        width:90%;
+        z-index: 999999;
+    }
+
+    .mobile_nesw_btn button{
+        width: 32px;
+        height: 32px;
+        border: none;
+        border-radius: 100%;
+        font-size: 14px;
+
+        color: #fff;
+        background-color: #000;
+    }
+
+
+    .kakao_news_layout_two{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0px;
+        width:49.5%;
+    }
+
+    .kakao_container_two{
+        position: relative;
+        width: 100%;
+        height: 180px;
+        border-radius: 15px;
+    }
+
+    .kakao_news_content_one{
+        position: absolute;
+        width:100%;
+        height:100%;
+        padding: 0px;
+        border-radius: 15px;
+    }
+
+    .kakao_container_two .kakao_news_content_one .kakao_news_title_text{
+        padding:20px 20px 0px 20px;
+    }
+
+    .kakao_news_main_text_second{
+        width:70%;
+        margin-top:10px;
+        padding:0px 20px;
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .kakao_container_three{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .kakao_small_news:nth-child(1){
+        width:36%;
+
+    }
+    .kakao_small_news:nth-child(2){
+        width:36%;
+    }
+    .kakao_small_news:nth-child(3){
+        width:100%;
+        margin-top:13px;
+    }
+
+    .kakao_small_news{
+        padding:15px;
+        border-radius: 15px;
+    }
+
+    .kakao_small_news_title{
+        font-size: 14px;
+    }
+
+    .kakao_small_button i{
+        font-size:11px;
+    }
+
+    .kakao_small_news .kakao_small_button strong{
+        display: none;
+    }
+
+    .kakao_promiss{
+        margin-top:80px;
+    }
+
+    .kakao_promiss_content{
+        height: 341px;
+    }
+
+    .kakao_promiss_sub_title strong{
+        width:95px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .kakao_promiss_sub_title_background{
+        width:95px;
+        height: 32px;
+        padding:2px 2px 10px 10px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .promiss_top_left{
+        width:18px;
+    }
+
+    .promiss_top_middle{
+        width:18px;
+        right:106px;
+        left:auto;
+    }
+
+    .promiss_top_right{
+        width:18px;
+        top:43px;
+    }
+
+    .promiss_bottom_left{
+        width:18px;
+    }
+
+    .promiss_bottom_middle{
+        width:18px;
+        right:57px;
+    }
+
+    .promiss_bottom_right{
+        width:18px;
+        bottom:55px;
+    }
+
+    .kakao_promiss_title{
+        bottom:10%;
+        left:10%;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .kakao_promiss_title{
+        width:140px;
+    }
+
+    .kakao_promiss_title strong{
+        width:140px;
+    }
+
+    .kakao_promiss_btn i{
+        width:48px;
+        height:48px;
+        font-size:14px;
+    }
+
+    .kakao_promiss_btn_background{
+        width:57px;
+        height:57px;
+        padding:0px;
+        border-top-left-radius: 15px;
+    }
+
+    .kakao_customer_service{
+        margin-top:80px;
+    }
+
+    .kakao_customer_service_content_one{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .kakao_customer_service_container_one{
+        flex-wrap: wrap;
+        margin-top:20px;
+    }
+
+    .kakao_customer_service_content_one_one{
+        width:25%;
+        height: 25px;
+        padding: 18px;
+        border-radius: 15px;
+    }
+
+    .kakao_customer_service_title{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .kakao_customer_service_title strong{
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .kakao_customer_service_title span strong{
+        display: none;
+    }
+
+    .kakao_customer_service_img{
+        display: none;
+    }
+
+    .kakao_customer_service_content_two{
+        margin-top:10px;
+        width:42%;
+        height: 136px;
+        padding: 18px;
+        border-radius: 15px;
+    }
+
+    .kakao_customer_service_content_two strong{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .kakao_customer_service_content_two p{
+        margin-top: 14px;
+        font-size: 12px;
+    }
+
+    .kakao_customer_service_icon_container{
+        margin-top: 35px;
+    }
+
+    .kakao_customer_service_icon_container img{
+        width:40px;
+    }
+
+    .kakao_customer_service_img_container{
+        display: none;
+    }
+
+    .kakao_customer_service_content_three{
+        margin-top:10px;
+        padding: 18px;
+        width:42%;
+        height: 136px;
+        border-radius: 15px;
+    }
+
+    .kakao_customer_service_title_three strong{
+        width:210px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .kakao_customer_service_title_three span{
+        margin-top:10px;
+    }
+
+    .kakao_customer_service_title_three span strong{
+        font-size: 12px;
+    }
+
+    .kakao_customer_service_img_container_three{
+        bottom:7%;
+        left:45%;
+        transform: none;
+    }
+
+    .kakao_customer_service_img_container_three img{
+        width:130px;
+        border-radius: 15px;
+    }
+
+    .kakao_customer_service_container_two{
+        margin-top:10px;
+    }
+
+    .kakao_customer_service_content_four{
+        width:42%;
+        height: 92px;
+        padding:18px;
+        border-radius: 15px;
+    }
+
+    .kakao_customer_service_title_four{
+        justify-content: space-between;
+    }
+
+    .kakao_customer_service_title_four strong{
+        font-size: 14px;
+    }
+
+    .kakao_customer_service_title_four span strong{
+        font-size: 12px;
+    }
+
+    .kakao_customer_service_title_four span button i{
+        font-size: 11px;
+    }
+
+    .kakao_customer_service_content_four img{
+        width: 62px;
+        padding-top:10px;
+    }
+
+    .kakao_customer_service_btn{
+        margin-top: 20px;
+    }
+
+    .kakao_customer_service_btn_container{
+        padding:15px 45px;
+    }
+
+    .kakao_customer_service_btn_container strong{
+        font-size: 14px;
+    }
+
+    .inner_footer{
+        margin-top:80px;
+    }
+    
+    .footer_service{
+        flex-direction: column;
+        width:70%;
+        margin: auto;
+        margin-top:40px;
+    }
+
+    .footer_service div{
+        width:100%;
+        padding:20px 0px;
+        border-bottom: 1px solid rgb(230, 230, 230);
+    }
+
+    .footer_service h3{
+        font-size: 15px;
+    }
+
+    .footer_service div:first-child ul li{
+        font-size: 12px;
+    }
+
+    .footer_service h4{
+        margin:20px 0px;
+    }
+
+    .footer_service div:nth-child(n+2) ul li{
+        display: none;
+    }
+
+    .footer_service div:nth-child(4){
+        display: none;
+    }
+    
+    .footer_service h4{
+        margin: 0px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .kakao_coperate{
+        position: relative;
+        display: block;
+        width:70%;
+        margin: auto;
+        margin-top:80px;
+    }
+
+    .kakao_coperate_list ul{
+        flex-wrap: wrap;
+    }
+
+    .kakao_coperate_list li{
+        width:50%;
+        padding:0px;
+        margin-bottom:20px;
+        cursor: pointer;
+    }
+    
+    .kakao_coperate_btn button{
+        position: absolute;
+        bottom:-10px;
+        right: 0px;
+    }
+}
+
+/*모바일 디바이스*/
+@media screen and (max-width: 767px){
+   
+    header{
+        max-width: 412px;
+    }
+
+    .menu_list li{
+        display:none;
+    }
+
+    .max_media_icon{
+        display:none;
+    }
+
+    .min_media_icon{
+        display:inline;
+    }
+    .mobile_hide_content{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top:0px;
+        right: -1025px;
+        width: 100%;
+        height: 100vh;
+        padding:10px 0px;
+        z-index: 99999;
+        background-color: #fff;
+
+    }
+
+    .mobile_hide_content span{
+        display:flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+
+    .mobile_hide_content span img{
+        width: 84px;
+        height: 24px;
+    }
+
+    .mobile_hide_content span i{
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .hide_menu{
+        width: 80%;
+        height: 80%;
+        margin: auto;
+    }
+
+    .hide_menu ul li{
+        display:flex;
+        align-items: center;
+        padding: 20px 0px;
+        cursor: pointer;
+    }
+
+    .hide_menu ul li img{
+        width: 48px;
+        height: 48px;
+    }
+
+    .hide_menu ul li strong{
+        margin-left:20px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+    
+    .hide_more_menu{
+        display:flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+
+    .hide_more_menu ul{
+        display:flex;
+    }
+
+    .hide_more_menu ul li{
+        font-size: 14px;
+        font-weight: bold;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+
+    .hide_more_menu ul li i{
+        font-size: 22px;
+        padding-left:20px;
+        cursor: pointer;
+    }
+
+    main{
+        max-width:412px;
+        margin: auto;
+    }
+
+    .video_side_banner{
+        flex-direction: column;
+    }
+
+    .video_container{
+        width: 100%;
+    }
+
+    .video_container video{
+        border-radius: 15px;
+    }
+
+    .video_banner_text{
+        position: static;
+        font-size: 22px;
+        font-weight: bold;
+        line-height:normal;
+        color: black;
+    }
+
+    .video_banner_text p{
+        margin: 10px 0px;
+    }
+
+    .img_text_fade_inout{
+        display: flex;
+        align-items: center;
+        border-bottom-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding: 0px 0px 10px 15px;
+    }
+
+    .img_text_fade_inout img{
+        width:48px;
+        height: 48px;
+    }
+
+    .img_text_fade_inout span{
+        display: block;
+        position: static;
+        height: 28px;
+        padding:10px 15px 0px 15px;
+    }
+
+    .right_top_radius{
+        right:219px;
+        width:22px;
+        height:22px;
+    }
+    .right_bottom_radius{
+        top:57px;
+        width:22px;
+        height:22px;
+    }
+    
+    .left_top_radius{
+        display: none;
+    }
+    
+    .left_bottom_radius{
+       display: none;
+    }
+
+    .wrap_text{
+        display: none;
+    }
+
+    .side_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top:80px;
+    }
+
+    .side_content_one_layout{
+        width: 100%;
+        height: 220px;
+        margin-right:15px;
+        border-radius: 15px;
+    }
+
+    .count_number_text{
+        font-size: 14px;
+    }
+
+    .count_up_container p {
+        font-size: 36px;
+    }
+    
+    .impact_img{
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 15px;
+        background-color: #4d4d4d;
+    }
+
+    .impact_img img{
+        position: relative;
+        transform: scale(80%);
+        top:-90px;
+        width: 100%;
+    }
+
+    .side_content_two_layout{
+        width: 100%;
+        margin: 20px 0px;
+        padding: 0px;
+        height: 180px;
+        border-radius: 15px;
+    }
+
+    .kakao_diversity{
+        padding:20px;
+    }
+
+    .kakao_financial_safety{
+        padding: 20px;
+    }
+
+    .second_text_black{
+        display: inline-flex;
+        width: auto;
+        margin-bottom: 12px;
+        padding:7px;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+
+    .second_text_yellow{
+        display: inline-flex;
+        width: auto;
+        margin-bottom: 12px;
+        padding:7px;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+
+    .main_text{
+        margin: 0px;
+        font-size:16px;
+        line-height: 20px;
+    }
+
+    .hashtag_text{
+        margin-top: 12px;
+        font-size:13px;
+    }
+
+    .indicator{
+        bottom:15px;
+    }
+
+    .side_content_three_layout{
+        width: 100%;
+        height: 220px;
+        margin-right:15px;
+        border-radius: 15px;
+    }
+
+    .kakao_culture{
+        height: 220px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    .kakao_culture video{
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .kakao_culture p{
+        font-size: 15px;
+    }
+
+    .kakao_community img{
+        top:40%;
+    }
+
+    .kakao_community{
+        border-radius: 15px;
+    }
+
+    .kakao_community p{
+        font-size: 14px;
+        bottom:30%;
+    }
+
+    .inner_background{
+        border-radius: 15px;
+    }
+
+    .kakao_history p{
+        font-size: 14px;
+    }
+
+    .slide_loop{
+        margin-top:80px;
+    }
+
+    .title_text img{
+        display:none;
+    }
+
+    .title_text h3{
+        max-width: 300px;
+        font-size:26px;
+        line-height: 38px;
+    }
+
+    .slide_container{
+        margin-top:20px;
+    }
+
+    .slide_container_clone{
+        margin-top:20px;
+    }
+
+    .slide_content_one{
+        flex-direction: column;
+    }
+
+    .slide_item_one_one{
+        width:192px;
+        height: 130px;
+        padding:20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .slide_text span img{
+        width: 32px;
+    }
+
+    .slide_text span p{
+        padding:2px 12px;
+        font-size: 12px;
+    }
+
+    .slide_text h5{
+        margin:10px 0px 0px 0px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .sub_p{
+      display: none;
+    }
+
+    .slide_hashtag span p{
+        margin-right:2px;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .slide_container li:nth-child(1) .slide_item_one_two{
+        position: relative;
+        width:232px;
+        height: 130px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: #9ab9ec;
+    }
+
+    .slide_container li:nth-child(1) .slide_item_one_two img{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 0px;
+    }
+    .slide_container li:nth-child(6) .slide_item_one_two{
+        position: relative;
+        width:232px;
+        height: 130px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: #7982bc;
+    }
+
+    .slide_container li:nth-child(6) .slide_item_one_two img{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 0px;
+    }
+
+    .slide_container_clone li:nth-child(1) .slide_item_one_two{
+        position: relative;
+        width:232px;
+        height: 130px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: #9ab9ec;
+    }
+
+    .slide_container_clone li:nth-child(1) .slide_item_one_two img{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 0px;
+    }
+
+    .slide_container_clone li:nth-child(6) .slide_item_one_two{
+        position: relative;
+        width:232px;
+        height: 130px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: #7982bc;
+    }
+
+    .slide_container_clone li:nth-child(6) .slide_item_one_two img{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 0px;
+    }
+
+    .slide_small_text_up{
+        width:192px;
+        height: 130px;
+        padding:20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .slide_small_img_down img{
+        width:232px;
+        height: 130px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .slide_small_text_down{
+        width:192px;
+        height: 130px;
+        padding:20px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .slide_small_img_up{
+        height:130px;
+    }
+    .slide_small_img_up img{
+        width: 232px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .slide_container{
+        animation: slide_left 150s linear infinite;
+    }
+
+    .slide_container:hover{
+        animation-play-state: inherit;
+    }
+    
+    .slide_container_clone{
+        animation: slide_right 150s linear infinite;
+    }
+    
+    .slide_container_clone:hover{
+        animation-play-state: inherit;
+    }
+
+    .kakao_hometax{
+      display: none;
+    }
+
+    .kakao_service{
+        margin-top:80px;
+    }
+
+    .kakao_service_container{
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .kakao_service_content{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-basis:40%;
+        margin-left:0px;
+        padding:16px;
+        border-radius: 15px;
+    }
+
+    .kakao_service_content strong{
+        font-size: 16px;
+    }
+
+    .kakao_service_img_container{
+        margin-top:20px;
+    }
+
+    .kakao_service_img_container img{
+        max-width:42px;
+        padding:0px;
+    }
+
+    .kakao_service_content:nth-child(1) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+    .kakao_service_content:nth-child(2) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+    .kakao_service_content:nth-child(3) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+    .kakao_service_content:nth-child(4) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+    .kakao_service_content:nth-child(5) .kakao_service_img_container img:nth-child(3){
+        display: none;
+    }
+
+    .kakao_service_btn{
+        width:100%;
+        margin-top:10px;
+        background-color: #f3f3f3;
+        border-radius: 30px;
+    }
+
+    .kakao_service_btn span strong{
+        font-size: 14px;
+    }
+
+    .kakao_service_btn span{
+        padding: 15px 0px;
+    }
+
+    .kakao_news{
+        margin-top:80px;
+    }
+
+    .kakao_news_wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top:20px;
+    }
+
+    .kakao_news_layout{
+        position: relative;
+        display: block;
+        width:100%;
+        height: 400px;
+        margin: 0px;
+    }
+
+    .kakao_container_one{
+        position: absolute;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .kakao_content_one_one{
+        padding:20px 20px 0px 20px;
+    }
+
+    .kakao_news_text_container img{
+        width:24px;
+    }
+
+    .kakao_news_text_container .kakao_news_title{
+        font-size: 12px;
+        margin:0px 5px;
+        padding:8px 9px;
+    }
+
+    .kakao_news_text_container .kakao_day{
+        font-size: 12px;
+    }
+
+    .kakao_news_main_text{
+        height:90px;
+        margin:10px 0px;
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .kakao_news_hashtag p{
+        font-size: 11px;
+        margin-bottom:20px;
+        padding:0px;
+        padding-right:3px;
+    }
+
+    .kakao_news_img_container{
+        height: 220px;
+    }
+
+    .kakao_news_img_container img{
+        height: 220px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .mobile_nesw_btn{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top:55%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        width:90%;
+        z-index: 999999;
+    }
+
+    .mobile_nesw_btn button{
+        width: 32px;
+        height: 32px;
+        border: none;
+        border-radius: 100%;
+        font-size: 14px;
+        color: #fff;
+        background-color: #000;
+    }
+
+
+    .kakao_news_layout_two{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:100%;
+        margin-top: 50px;
+    }
+
+    .kakao_container_two{
+        position: relative;
+        width: 100%;
+        height: 150px;
+        border-radius: 15px;
+    }
+
+    .kakao_news_content_one{
+        position: absolute;
+        width:100%;
+        height:100%;
+        padding: 0px;
+        border-radius: 15px;
+    }
+
+    .kakao_container_two .kakao_news_content_one .kakao_news_title_text{
+        padding:20px 20px 0px 20px;
+    }
+
+    .kakao_news_main_text_second{
+        width:90%;
+        margin-top:10px;
+        padding:0px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+
+    .kakao_container_three{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .kakao_small_news:nth-child(1){
+        width:40%;
+
+    }
+    .kakao_small_news:nth-child(2){
+        width:40%;
+    }
+    .kakao_small_news:nth-child(3){
+        width:100%;
+        margin-top:13px;
+    }
+
+    .kakao_small_news{
+        padding:16px;
+        border-radius: 15px;
+    }
+
+    .kakao_small_news_title{
+        font-size: 17px;
+    }
+
+    .kakao_small_button i{
+        font-size:11px;
+    }
+
+    .kakao_small_news .kakao_small_button strong{
+        display: none;
+    }
+
+    .kakao_promiss{
+        margin-top:80px;
+    }
+
+    .kakao_promiss_container{
+        flex-direction: column;
+    }
+
+    .kakao_promiss_content{
+        width:100%;
+        height:224px;
+        margin-top:20px;
+        border-radius: 13px;
+    }
+
+    .kakao_promiss_sub_title strong{
+        width:125px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .kakao_promiss_sub_title_background{
+        width:125px;
+        height: 32px;
+        padding:2px 2px 10px 10px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .promiss_top_left{
+        width:13px;
+    }
+
+    .promiss_top_middle{
+        width:13px;
+        right:136px;
+        left:auto;
+    }
+
+    .promiss_top_right{
+        width:13px;
+        top:43px;
+    }
+
+    .promiss_bottom_left{
+        width:13px;
+    }
+
+    .promiss_bottom_middle{
+        display: none;
+    }
+
+    .promiss_bottom_right{
+        display: none;
+    }
+
+    .kakao_promiss_title{
+        bottom:6%;
+        left:5%;
+        max-width:245px;
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .kakao_promiss_title strong{
+        max-width:245px;
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .kakao_promiss_content img{
+        width:50%;
+    }
+
+    .kakao_promiss_btn i{
+        bottom:5%;
+        right: 3%;
+        width:36px;
+        height:36px;
+        font-size:14px;
+    }
+
+    .kakao_promiss_btn_background{
+        display: none;
+        width:57px;
+        height:57px;
+        padding:0px;
+        border-top-left-radius: 15px;
+    }
+
+    .kakao_promiss_content:nth-child(2) img{
+        width: 30%;
+    }
+
+    .kakao_promiss_content:nth-child(3) img{
+        width: 30%;
+    }
+
+    .kakao_customer_service{
+        margin-top:80px;
+    }
+
+    .kakao_customer_service_container_one{
+        flex-direction: column;
+        margin-top:20px;
+    }
+
+    .kakao_customer_service_content_one{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .kakao_customer_service_content_one_one{
+        max-width:26%;
+        padding:10px;
+        margin: 0px;
+        border-radius: 15px;
+    }
+
+    .kakao_customer_service_title strong{
+        max-width: 80%;
+        font-size: 16px;
+        letter-spacing:-2px;
+        line-height: 24px;
+    }
+
+    .kakao_customer_service_img{
+        display:none;
+    }
+
+    .kakao_customer_service_title span strong{
+        display: none;
+    }
+
+    .kakao_customer_service_content_two{
+        margin-top:10px;
+        padding:20px;
+        width: 100%;
+        box-sizing: border-box;
+        max-height: 180px;
+        border-radius: 15px;
+    }
+
+    .kakao_customer_service_content_two strong{
+        font-size: 18px;
+    }
+
+    .kakao_customer_service_content_two p{
+        margin-top: 14px;
+        font-size: 14px;
+    }
+
+    .kakao_customer_service_icon_container{
+        justify-content: center;
+        width:100%;
+        position: absolute;
+        bottom:15%;
+        left:0%;
+    }
+
+    .kakao_customer_service_icon_container img{
+        max-width:46px;
+        margin:0px 10px;
+    }
+
+    .kakao_customer_service_img_container{
+        display: none;
+    }
+
+    .kakao_customer_service_content_three{
+        margin-top:10px;
+        padding: 24px;
+        width:100%;
+        height: 180px;
+        border-radius: 15px;
+        box-sizing: border-box;
+    }
+
+    .kakao_customer_service_title_three strong{
+        width:210px;
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .kakao_customer_service_title_three span{
+        margin-top:10px;
+    }
+
+    .kakao_customer_service_title_three span strong{
+        font-size: 14px;
+    }
+
+    .kakao_customer_service_img_container_three{
+        bottom:7%;
+        left: auto;
+        right:7%;
+        transform: none;
+    }
+
+    .kakao_customer_service_img_container_three img{
+        width:160px;
+        border-radius: 15px;
+    }
+
+    .kakao_customer_service_container_two{
+        margin-top:10px;
+        flex-direction: column;
+    }
+
+    .kakao_customer_service_content_four{
+        width:100%;
+        margin-bottom:10px;
+        padding:16px;
+        box-sizing: border-box;
+        border-radius: 15px;
+    }
+
+    .kakao_customer_service_title_four strong{
+        font-size: 16px;
+        max-width:245px;
+    }
+
+    .kakao_customer_service_title_four span strong{
+        display: none;
+    }
+
+    .kakao_customer_service_title_four span button i{
+        font-size: 11px;
+    }
+
+    .kakao_customer_service_content_four img{
+        width: 62px;
+        padding-top:10px;
+    }
+
+    .kakao_customer_service_btn{
+        margin-top: 20px;
+
+    }
+
+    .kakao_customer_service_btn_container{
+        width: 100%;
+        padding:13px 0px;
+        justify-content: center;
+    }
+
+    .kakao_customer_service_btn_container strong{
+        font-size: 15px;
+    }
+
+    .inner_footer{
+        margin-top:80px;
+    }
+    
+    .footer_service{
+        flex-direction: column;
+        width:70%;
+        margin: auto;
+        margin-top:40px;
+    }
+
+    .footer_service div{
+        width:100%;
+        padding:20px 0px;
+        border-bottom: 1px solid rgb(230, 230, 230);
+    }
+
+    .footer_service h3{
+        font-size: 15px;
+    }
+
+    .footer_service div:first-child ul li{
+        font-size: 12px;
+    }
+
+    .footer_service h4{
+        margin:20px 0px;
+    }
+
+    .footer_service div:nth-child(n+2) ul li{
+        display: none;
+    }
+
+    .footer_service div:nth-child(4){
+        display: none;
+    }
+    
+    .footer_service h4{
+        margin: 0px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .kakao_coperate{
+        position: relative;
+        display: block;
+        width:70%;
+        margin: auto;
+        margin-top:80px;
+    }
+
+    .kakao_coperate_list ul{
+        flex-wrap: wrap;
+    }
+
+    .kakao_coperate_list li{
+        width:50%;
+        padding:0px;
+        margin-bottom:20px;
+        cursor: pointer;
+    }
+    
+    .kakao_coperate_btn button{
+        display: none;
     }
 }

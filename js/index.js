@@ -1,5 +1,4 @@
 $(function(){
-    $(window).resize(function(){document.location.reload();})
     if($(window).width() > 1025){
         // 전구 모양 글시 fade in / out
         $(".img_text_fade_inout").find("img").mouseover(function(){
